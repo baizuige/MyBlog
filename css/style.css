@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  padding: 10px 10px 40px 10px;
+}
+article:nth-child(1){
+  flex: 1;
+}
+main{
+  border-radius: 10px;
+  background-color: #fff;
+}
+main> header{
+  height: 15vw;
+  
+}
+.main{
+  height: 75vw;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+section{
+  background-color: burlywood;
+  padding: 5px;
+  background-clip:content-box;
+  border-radius: 13px;
+}
+
+footer{
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
