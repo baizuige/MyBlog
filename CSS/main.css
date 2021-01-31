@@ -52,7 +52,7 @@ main{
 .author-message a span+span{
   font-size: 0.9rem;
 }
-.card img{
+.card-author img{
   width: 5.5rem;
 }
 .author-card-society{
@@ -66,7 +66,6 @@ main{
 }
 .main{
   width: 52%;
-  /* height: 10000px; */
   order: 2;
 }
 .right-column{
@@ -104,11 +103,9 @@ main{
   background-color: #edeff3;
   border-radius: 0.3rem;
   padding: 6px 12px;
-  transition: all 0.4s;
 }
 .categories-list-item:hover span, .archive-list-item:hover span{
   background-color: #adb7d0;
-  transition: all 0.4s;
 }
 .categories-list-item span, .archive-list-item span{
   float: right;
@@ -128,10 +125,15 @@ main{
 }
 .tag-list-item{
   float: left;
+  color: #3c4858;
   background-color: #edeff3;
   padding: 3px 7px;
   margin: 0 7px 8px 7px;
   border-radius: 0.3rem;
+  transition: all 0.4s;
+}
+.tag-list-item:hover{
+  background-color: #adb7d0;
 }
 .card-tag-header, .card-recent-header, .card-archive-header{
   margin-bottom: 16px;
@@ -139,6 +141,9 @@ main{
 .recent-list-item{
   padding-left: 6px;
   margin-bottom: 10px;
+}
+.recent-list-item:nth-last-child(1){
+  margin-bottom: 0px;
 }
 .recent-item-time{
   font-size: 0.9rem;
@@ -154,5 +159,70 @@ main{
   background-color: #edeff3;
   border-radius: 0.3rem;
   padding-left: 16px;
-  transition: all 0.4s;
+}
+.main .card{
+  padding: 0;
+}
+.banner{
+  width: 745px;
+  height: 300px;
+}
+.post{
+  padding: 1.5rem;
+}
+.post-title{
+  color: #475b6d;
+  font-size: 1.85rem;
+  font-weight: 500;
+  line-height: 1.125;
+  margin: 0.5rem 0 ;
+  padding-bottom: 0.4rem;
+}
+.card-excerpt{
+  margin-bottom: 0.85rem;
+}
+.card-post-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-meta{
+  display: flex;
+  align-items: center;
+  color: #909faf;
+}
+.time{
+  display: flex;
+  align-items: center;
+}
+.post-meta svg{
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+.post-meta span{
+  padding: 0 2px;
+}
+.dot::after{
+  content: "·";
+}
+.post-meta a{
+  color: #909faf;
+  padding: 0 2px;
+}
+.post-meta>a{
+  float: right;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.card_1{
+  order: 3;
+}
+.card_2{
+  order: 2;
+}
+.card_3{
+  order: 1;
 }
